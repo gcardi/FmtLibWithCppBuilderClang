@@ -28,3 +28,13 @@ Moreover, regardless you link with static or dynamic libraries, the default libr
 ```#pragma comment(lib, "compiler_rt") // __udivti3, __umodti3```
 
 or explicitly add compiler_rt.a (for bcc64) or compiler_rt.lib (for bcc32c) in the project.
+
+## Screenshots
+
+Demo Console/Simple
+
+<a href="https://imgbb.com/"><img src="https://i.ibb.co/7yXDYct/3.png" alt="3" border="0"></a>
+
+Demo GUI/Simple
+
+<a href="https://ibb.co/ggjGzH8"><img src="https://i.ibb.co/RHv1zZK/2.png" alt="2" border="0"></a>
