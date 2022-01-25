@@ -17,3 +17,8 @@ Also don't forget to add ```..\fmt\include``` to your project settings for all p
 
 <a href="https://ibb.co/6PpYkYH"><img src="https://i.ibb.co/G217q7W/1.png" alt="1" border="0"></a>
 
+Also note that, since {fmt} looks for the _isatty function which does not exist on the C++ Builder, you must put 
+
+```#define _isatty isatty```
+
+before the ```#include <fmt/core.h>``` (or set this macro in the project definitions).
