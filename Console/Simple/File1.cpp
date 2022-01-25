@@ -14,7 +14,7 @@
 
 //#pragma comment( lib, "fmt" )
 
-#define _isatty isatty
+//#define _isatty isatty
 
 #include <fmt/core.h>
 
