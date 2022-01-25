@@ -25,6 +25,6 @@ before the ```#include <fmt/core.h>``` (or set this macro in the project definit
 
 Moreover, regardless you link with static or dynamic libraries, the default library set for the clang's toolchains forget to include two functions that {fmt} library uses, i.e.: __udivti3 and __umodti3. To remedy to this problem simply you have to add (somewhere in your code) the following line:
 
-#pragma comment(lib, "compiler_rt") // __udivti3, __umodti3
+```#pragma comment(lib, "compiler_rt") // __udivti3, __umodti3```
 
 or explicitly add compiler_rt.a (for bcc64) or compiler_rt.lib (for bcc32c) in the project.
