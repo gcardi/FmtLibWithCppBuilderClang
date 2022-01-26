@@ -48,7 +48,7 @@ public:
     }
 
     EnableVirtualTermProcessing( EnableVirtualTermProcessing const & ) = delete;
-    EnableVirtualTermProcessing operator=( EnableVirtualTermProcessing const & ) = delete;
+    EnableVirtualTermProcessing& operator=( EnableVirtualTermProcessing const & ) = delete;
 
     inline bool Failed() const { return fail_; }
 
