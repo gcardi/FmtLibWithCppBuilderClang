@@ -4,3 +4,9 @@
 [submodule "ConsoleUTF8"]
 	path = ConsoleUTF8
 	url = https://github.com/gcardi/ConsoleUTF8.git
+[submodule "Libs/fmt"]
+	path = Libs/fmt
+	url = https://github.com/fmtlib/fmt.git
+[submodule "Libs/ConsoleUTF8"]
+	path = Libs/ConsoleUTF8
+	url = https://github.com/gcardi/ConsoleUTF8.git
