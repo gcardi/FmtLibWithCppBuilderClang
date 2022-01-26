@@ -5,7 +5,7 @@
 Please, clone the repository using the 'recurse-submodule' switch:
 
 ```
-git clone --recurse-submodules https://github.com/gcardi/Tabellone.git
+git clone --recurse-submodules https://github.com/gcardi/FmtLibWithCppBuilderClang.git
 ```
 
 ## Notes
