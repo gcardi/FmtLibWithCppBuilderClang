@@ -1,3 +1,6 @@
 [submodule "fmt"]
 	path = fmt
 	url = https://github.com/fmtlib/fmt.git
+[submodule "ConsoleUTF8"]
+	path = ConsoleUTF8
+	url = https://github.com/gcardi/ConsoleUTF8.git
