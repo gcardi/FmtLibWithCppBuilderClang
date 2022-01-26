@@ -69,12 +69,16 @@
         <Multithreaded>true</Multithreaded>
         <SanitizedProjectName>ANSIColors</SanitizedProjectName>
         <VerInfo_Locale>1040</VerInfo_Locale>
-        <_TCHARMapping>wchar_t</_TCHARMapping>
+        <_TCHARMapping>char</_TCHARMapping>
         <VerInfo_Keys>CompanyName=;FileDescription=$(MSBuildProjectName);FileVersion=1.0.0.0;InternalName=;LegalCopyright=;LegalTrademarks=;OriginalFilename=;ProgramID=com.embarcadero.$(MSBuildProjectName);ProductName=$(MSBuildProjectName);ProductVersion=1.0.0.0;Comments=</VerInfo_Keys>
-        <Defines>FMT_HEADER_ONLY ;_isatty=isatty;FMT_USE_STRING_VIEW;$(Defines)</Defines>
+        <Defines>FMT_HEADER_ONLY ;$(Defines)</Defines>
         <BCC_UseClassicCompiler>false</BCC_UseClassicCompiler>
         <BCC_UseSplitDWARF>true</BCC_UseSplitDWARF>
-        <IncludePath>..\..\..\Libs\fmt\include;$(IncludePath)</IncludePath>
+        <IncludePath>..\..\..\Libs\ConsoleUTF8\;..\..\..\Libs\fmt\include;$(IncludePath)</IncludePath>
+        <BRCC_UserSuppliedOptions>-i&quot;$(BDSINCLUDE)\windows\sdk&quot; -i&quot;$(BDSINCLUDE)\windows\crtl&quot;</BRCC_UserSuppliedOptions>
+        <ILINK_LibraryPath>..\..\..\Libs\ConsoleUTF8\;$(ILINK_LibraryPath)</ILINK_LibraryPath>
+        <BRCC_DeleteIncludePath>true</BRCC_DeleteIncludePath>
+        <BCC_UserSuppliedOptions>-D_isatty=isatty</BCC_UserSuppliedOptions>
     </PropertyGroup>
     <PropertyGroup Condition="'$(Base_Win32)'!=''">
         <PackageImports>AbbreviaCR;AbbreviaVCLC;adortl;appanalytics;AsyncProDR;BatControls;BatControlsFMX;BatLibrary;BatLibraryFMX;bcbie;bcbsmp;bindcomp;bindcompdbx;bindcompfmx;bindcompvcl;bindcompvclsmp;bindcompvclwinx;bindengine;CloudService;CustomIPTransport;DataSnapClient;DataSnapCommon;DataSnapConnectors;DatasnapConnectorsFreePascal;DataSnapFireDAC;DataSnapIndy10ServerTransport;DataSnapNativeClient;DataSnapProviderClient;DataSnapServer;DataSnapServerMidas;dbexpress;dbrtl;dbxcds;DbxClientDriver;DbxCommonDriver;DBXDb2Driver;DBXFirebirdDriver;DBXInformixDriver;DBXInterBaseDriver;DBXMSSQLDriver;DBXMySQLDriver;DBXOdbcDriver;DBXOracleDriver;DBXSqliteDriver;DBXSybaseASADriver;DBXSybaseASEDriver;DOSCommandCR;dsnap;dsnapcon;dsnapxml;EasyListviewD;emsclient;emsclientfiredac;emsedge;emshosting;emsserverresource;EnhDbGridRunPkg;EssentialsCR;EsVclComponents;FireDAC;FireDACADSDriver;FireDACASADriver;FireDACCommon;FireDACCommonDriver;FireDACCommonODBC;FireDACDb2Driver;FireDACDBXDriver;FireDACDSDriver;FireDACIBDriver;FireDACInfxDriver;FireDACMongoDBDriver;FireDACMSAccDriver;FireDACMSSQLDriver;FireDACMySQLDriver;FireDACODBCDriver;FireDACOracleDriver;FireDACPgDriver;FireDACSqliteDriver;FireDACTDataDriver;fmx;fmxase;fmxdae;fmxFireDAC;FMXfrx28;FMXfrxDB28;fmxobj;FMXTee;FmxTeeUI;frx28;frxDB28;frxe28;frxTee28;ibmonitor;ibxbindings;ibxpress;IndyCore;IndyIPClient;IndyIPCommon;IndyIPServer;IndyProtocols;IndySystem;inet;inetdb;inetdbxpress;LockBox3CR;LockBoxDR;MPCommonLibD;NDrawGridPkgRun;OnGuardCR;OnGuardFMXCR;OrpheusCD;OrpheusCR;OrpheusDBCR;OSMMapDXE2;PowerPDFCR;RadiantShapesFmx;RadiantShapesFmx_Design;RaizeComponentsVcl;RaizeComponentsVclDb;RESTBackendComponents;RESTComponents;rtl;soapmidas;soaprtl;soapserver;SVGIconImageList;SVGIconImageListFMX;SVGIconPackage;SynEditCR;SysToolsCR;SysToolsDBCR;Tee;TeeDB;TeeUI;tethering;TGPuttyLibCPP;vcl;vclactnband;vcldb;vcldsnap;vcledge;vclFireDAC;vclib;vclie;vclimg;VCLRESTComponents;vclribbon;VclSmp;vcltouch;vclwinx;vclx;VirtualTreesCR;xmlrtl;$(PackageImports)</PackageImports>
@@ -83,18 +87,19 @@
         <VerInfo_Locale>1033</VerInfo_Locale>
         <UWP_CppLogo44>$(BDS)\bin\Artwork\Windows\UWP\cppreg_UwpDefault_44.png</UWP_CppLogo44>
         <UWP_CppLogo150>$(BDS)\bin\Artwork\Windows\UWP\cppreg_UwpDefault_150.png</UWP_CppLogo150>
-        <BCC_PCHName_Clang>ANSIColorsPCH1.h</BCC_PCHName_Clang>
         <Manifest_File>(None)</Manifest_File>
+        <Debugger_RunParams>π</Debugger_RunParams>
     </PropertyGroup>
     <PropertyGroup Condition="'$(Base_Win64)'!=''">
         <PackageImports>AbbreviaCR;AbbreviaVCLC;adortl;appanalytics;AsyncProDR;BatControls;BatLibraryFMX;bcbie;bcbsmp;bindcomp;bindcompdbx;bindcompfmx;bindcompvcl;bindcompvclsmp;bindcompvclwinx;bindengine;CloudService;CustomIPTransport;DataSnapClient;DataSnapCommon;DataSnapConnectors;DatasnapConnectorsFreePascal;DataSnapFireDAC;DataSnapIndy10ServerTransport;DataSnapNativeClient;DataSnapProviderClient;DataSnapServer;DataSnapServerMidas;dbexpress;dbrtl;dbxcds;DbxClientDriver;DbxCommonDriver;DBXDb2Driver;DBXFirebirdDriver;DBXInformixDriver;DBXInterBaseDriver;DBXMSSQLDriver;DBXMySQLDriver;DBXOdbcDriver;DBXOracleDriver;DBXSqliteDriver;DBXSybaseASADriver;DBXSybaseASEDriver;DOSCommandCR;dsnap;dsnapcon;dsnapxml;EasyListviewD;emsclient;emsclientfiredac;emsedge;emshosting;emsserverresource;EnhDbGridRunPkg;EssentialsCR;EsVclComponents;FireDAC;FireDACADSDriver;FireDACASADriver;FireDACCommon;FireDACCommonDriver;FireDACCommonODBC;FireDACDb2Driver;FireDACDBXDriver;FireDACDSDriver;FireDACIBDriver;FireDACInfxDriver;FireDACMongoDBDriver;FireDACMSAccDriver;FireDACMSSQLDriver;FireDACMySQLDriver;FireDACODBCDriver;FireDACOracleDriver;FireDACPgDriver;FireDACSqliteDriver;FireDACTDataDriver;fmx;fmxase;fmxdae;fmxFireDAC;fmxobj;FMXTee;FmxTeeUI;ibmonitor;ibxbindings;ibxpress;IndyCore;IndyIPClient;IndyIPCommon;IndyIPServer;IndyProtocols;IndySystem;inet;inetdb;inetdbxpress;LockBox3CR;LockBoxDR;MPCommonLibD;NDrawGridPkgRun;OnGuardCR;OnGuardFMXCR;OrpheusCR;OrpheusDBCR;OSMMapDXE2;PowerPDFCR;RadiantShapesFmx;RadiantShapesFmx_Design;RaizeComponentsVcl;RaizeComponentsVclDb;RESTBackendComponents;RESTComponents;rtl;soapmidas;soaprtl;soapserver;SVGIconImageList;SVGIconImageListFMX;SVGIconPackage;SynEditCR;SysToolsCR;SysToolsDBCR;Tee;TeeDB;TeeUI;tethering;TGPuttyLibCPP;vcl;vclactnband;vcldb;vcldsnap;vcledge;vclFireDAC;vclib;vclie;vclimg;VCLRESTComponents;vclribbon;VclSmp;vcltouch;vclwinx;vclx;VirtualTreesCR;xmlrtl;$(PackageImports)</PackageImports>
         <UWP_CppLogo44>$(BDS)\bin\Artwork\Windows\UWP\cppreg_UwpDefault_44.png</UWP_CppLogo44>
         <UWP_CppLogo150>$(BDS)\bin\Artwork\Windows\UWP\cppreg_UwpDefault_150.png</UWP_CppLogo150>
-        <BCC_PCHName_Clang>ANSIColorsPCH1.h</BCC_PCHName_Clang>
         <DCC_Namespace>Winapi;System.Win;Data.Win;Datasnap.Win;Web.Win;Soap.Win;Xml.Win;$(DCC_Namespace)</DCC_Namespace>
         <BT_BuildType>Debug</BT_BuildType>
         <VerInfo_Locale>1033</VerInfo_Locale>
         <Manifest_File>(None)</Manifest_File>
+        <Debugger_RunParams>π</Debugger_RunParams>
+        <ILINK_AdditionalOptions>-l compiler_rt.a</ILINK_AdditionalOptions>
     </PropertyGroup>
     <PropertyGroup Condition="'$(Cfg_1)'!=''">
         <BCC_OptimizeForSpeed>false</BCC_OptimizeForSpeed>
@@ -141,9 +146,26 @@
             <BuildOrder>0</BuildOrder>
             <PCH>true</PCH>
         </PCHCompile>
+        <CppCompile Include="fmt_init.cpp">
+            <DependentOn>fmt_init.h</DependentOn>
+            <BuildOrder>4</BuildOrder>
+        </CppCompile>
         <CppCompile Include="main.cpp">
             <BuildOrder>1</BuildOrder>
         </CppCompile>
+        <CppCompile Include="..\..\..\Libs\ConsoleUTF8\init.c">
+            <VirtualFolder>{CCA22DCD-9763-4D25-BC20-713D15A70689}</VirtualFolder>
+            <BuildOrder>5</BuildOrder>
+        </CppCompile>
+        <ResourceCompile Include="..\..\..\Libs\ConsoleUTF8\manifest.rc">
+            <ModuleName>manifest.rc</ModuleName>
+            <VirtualFolder>{CCA22DCD-9763-4D25-BC20-713D15A70689}</VirtualFolder>
+            <Form>manifest.res</Form>
+            <BuildOrder>4</BuildOrder>
+        </ResourceCompile>
+        <None Include="..\..\..\Libs\ConsoleUTF8\utf8.xml">
+            <VirtualFolder>{CCA22DCD-9763-4D25-BC20-713D15A70689}</VirtualFolder>
+        </None>
         <BuildConfiguration Include="Base">
             <Key>Base</Key>
         </BuildConfiguration>
@@ -173,6 +195,9 @@
                     <Excluded_Packages Name="$(BDSBIN)\dcloffice2k280.bpl">Microsoft Office 2000 Sample Automation Server Wrapper Components</Excluded_Packages>
                     <Excluded_Packages Name="$(BDSBIN)\dclofficexp280.bpl">Microsoft Office XP Sample Automation Server Wrapper Components</Excluded_Packages>
                 </Excluded_Packages>
+                <VFOLDERS>
+                    <VFOLDER ID="{CCA22DCD-9763-4D25-BC20-713D15A70689}" name="Legacy UTF8 Support"/>
+                </VFOLDERS>
             </CPlusPlusBuilder.Personality>
             <Deployment Version="3">
                 <DeployFile Condition="'$(DynamicRTL)'=='true' And '$(Multithreaded)'=='true'" LocalName="$(BDS)\bin\cc32280mt.dll" Class="DependencyModule">
@@ -218,6 +243,12 @@
                 </DeployFile>
                 <DeployFile Condition="'$(UsingDelphiRTL)'=='true'" LocalName="$(BDS)\bin64\borlndmm.dll" Class="DependencyModule">
                     <Platform Name="Win64">
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="..\..\..\Libs\ConsoleUTF8\utf8.xml" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win64">
+                        <RemoteDir>.\</RemoteDir>
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
@@ -958,8 +989,8 @@
                 </DeployClass>
                 <ProjectRoot Platform="OSX32" Name="$(PROJECTNAME)"/>
                 <ProjectRoot Platform="OSX64" Name="$(PROJECTNAME)"/>
-                <ProjectRoot Platform="Win32" Name="$(PROJECTNAME)"/>
                 <ProjectRoot Platform="Android64" Name="$(PROJECTNAME)"/>
+                <ProjectRoot Platform="Win32" Name="$(PROJECTNAME)"/>
                 <ProjectRoot Platform="OSXARM64" Name="$(PROJECTNAME)"/>
                 <ProjectRoot Platform="Android" Name="$(PROJECTNAME)"/>
                 <ProjectRoot Platform="Win64" Name="$(PROJECTNAME)"/>
