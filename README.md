@@ -31,10 +31,14 @@ or explicitly add compiler_rt.a (for bcc64) or compiler_rt.lib (for bcc32c) in t
 
 ## Screenshots
 
-Demo Console/Simple
+Demo Examples/Console/Simple
 
 <a href="https://imgbb.com/"><img src="https://i.ibb.co/7yXDYct/3.png" alt="3" border="0"></a>
 
-Demo GUI/Simple
+Demo Examples/Console/Colors
+
+<a href="https://imgbb.com/"><img src="https://i.ibb.co/vL8YB4Z/4.png" alt="4" border="0"></a>
+
+Demo Examples/GUI/Simple
 
 <a href="https://ibb.co/ggjGzH8"><img src="https://i.ibb.co/RHv1zZK/2.png" alt="2" border="0"></a>
