@@ -16,7 +16,6 @@
 //---------------------------------------------------------------------------
 #pragma package(smart_init)
 #pragma resource "*.dfm"
-#pragma comment(lib, "compiler_rt") // __udivti3, __umodti3
 TForm1 *Form1;
 
 //---------------------------------------------------------------------------

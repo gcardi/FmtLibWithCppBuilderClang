@@ -10,7 +10,9 @@
 
 #include <stdexcept>
 
-#pragma comment(lib, "compiler_rt") // __udivti3, __umodti3
+#if defined(__BORLANDC__) && defined(__clang__) && defined(_WIN64)
+# pragma comment(lib, "compiler_rt") // __udivti3, __umodti3
+#endif
 
 //#pragma comment( lib, "fmt" )
 

@@ -3,9 +3,17 @@
 #include <vcl.h>
 #pragma hdrstop
 #include <tchar.h>
+
+//---------------------------------------------------------------------------
+#if defined(__BORLANDC__) && defined(__clang__) && defined(_WIN64)
+# pragma comment(lib, "compiler_rt") // __udivti3, __umodti3
+#endif
+//---------------------------------------------------------------------------
+
 //---------------------------------------------------------------------------
 USEFORM("FormMain.cpp", Form1);
 //---------------------------------------------------------------------------
+
 int WINAPI _tWinMain(HINSTANCE, HINSTANCE, LPTSTR, int)
 {
     try
