@@ -17,7 +17,7 @@ The Console examples emit the text in UTF8, while those used in the GUI mainly t
 
 Please, don't forget to add the ```fmt\include``` directory to search-paths for header files in the project settings for all platforms/configurations.
 
-<a><img src="https://i.ibb.co/G217q7W/1.png" alt="1" border="0"></a>
+<a><img src="docs/assets/images/1.png" alt="1" border="0"></a>
 
 Also note that, since {fmt} looks for the _isatty function which does not exist on the C++ Builder, you must put 
 
@@ -35,12 +35,12 @@ or explicitly add compiler_rt.a (for bcc64) or compiler_rt.lib (for bcc32c) in t
 
 Demo Examples/Console/Simple
 
-<a><img src="https://i.ibb.co/7yXDYct/3.png" alt="3" border="0"></a>
+<a><img src="docs/assets/images/3.png" alt="3" border="0"></a>
 
 Demo Examples/Console/Colors
 
-<a><img src="https://i.ibb.co/vL8YB4Z/4.png" alt="4" border="0"></a>
+<a><img src="docs/assets/images/4.png" alt="4" border="0"></a>
 
 Demo Examples/GUI/Simple
 
-<a><img src="https://i.ibb.co/RHv1zZK/2.png" alt="2" border="0"></a>
+<a><img src="docs/assets/images/2.png" alt="2" border="0"></a>
